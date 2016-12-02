@@ -249,5 +249,15 @@ namespace SaleSystem
                 UserId          = "NA";
             }*/
         }
+
+        private void Update_Clicked(object sender, EventArgs e)
+        {
+            MessageBox.Show("Not yet implemented!");
+        }
+
+        private void Inventory_Clicked(object sender, EventArgs e)
+        {
+            MessageBox.Show("Not yet implemented!");
+        }
     }
 }

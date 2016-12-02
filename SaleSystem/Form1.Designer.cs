@@ -33,8 +33,8 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dateLbl = new System.Windows.Forms.Label();
             this.timeLbl = new System.Windows.Forms.Label();
-            this.HistoryButton = new System.Windows.Forms.Button();
             this.SignupButton = new System.Windows.Forms.Button();
+            this.HistoryButton = new System.Windows.Forms.Button();
             this.SaleButton = new System.Windows.Forms.Button();
             this.ManageButton = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -111,21 +111,6 @@
             this.timeLbl.TabIndex = 5;
             this.timeLbl.Text = "Time: 16:00:00";
             // 
-            // HistoryButton
-            // 
-            this.HistoryButton.BackColor = System.Drawing.SystemColors.Control;
-            this.HistoryButton.FlatAppearance.BorderSize = 0;
-            this.HistoryButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HistoryButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.HistoryButton.Image = ((System.Drawing.Image)(resources.GetObject("HistoryButton.Image")));
-            this.HistoryButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.HistoryButton.Location = new System.Drawing.Point(378, 41);
-            this.HistoryButton.Name = "HistoryButton";
-            this.HistoryButton.Size = new System.Drawing.Size(282, 75);
-            this.HistoryButton.TabIndex = 4;
-            this.HistoryButton.Text = "Inventory";
-            this.HistoryButton.UseVisualStyleBackColor = false;
-            // 
             // SignupButton
             // 
             this.SignupButton.BackColor = System.Drawing.SystemColors.Control;
@@ -141,6 +126,22 @@
             this.SignupButton.Text = "Sign Up";
             this.SignupButton.UseVisualStyleBackColor = false;
             this.SignupButton.Click += new System.EventHandler(this.SignupButton_Click);
+            // 
+            // HistoryButton
+            // 
+            this.HistoryButton.BackColor = System.Drawing.SystemColors.Control;
+            this.HistoryButton.FlatAppearance.BorderSize = 0;
+            this.HistoryButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HistoryButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.HistoryButton.Image = ((System.Drawing.Image)(resources.GetObject("HistoryButton.Image")));
+            this.HistoryButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.HistoryButton.Location = new System.Drawing.Point(378, 41);
+            this.HistoryButton.Name = "HistoryButton";
+            this.HistoryButton.Size = new System.Drawing.Size(282, 75);
+            this.HistoryButton.TabIndex = 4;
+            this.HistoryButton.Text = "Inventory";
+            this.HistoryButton.UseVisualStyleBackColor = false;
+            this.HistoryButton.Click += new System.EventHandler(this.Inventory_Clicked);
             // 
             // SaleButton
             // 
@@ -225,7 +226,6 @@
             this.userBox.Name = "userBox";
             this.userBox.Size = new System.Drawing.Size(434, 32);
             this.userBox.TabIndex = 2;
-            this.userBox.Text = "test2@test.com";
             // 
             // lookupButton
             // 
@@ -349,6 +349,7 @@
             this.updateBtn.TabIndex = 12;
             this.updateBtn.Text = "Update";
             this.updateBtn.UseVisualStyleBackColor = false;
+            this.updateBtn.Click += new System.EventHandler(this.Update_Clicked);
             // 
             // label1
             // 
